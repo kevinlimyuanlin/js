@@ -8,7 +8,7 @@ function write2Para(paraID, text) {
 
 function writeTemp(paraID, cTemp) {
     var fTemp=c2F(cTemp)
-    var strWrite="Temperature in Celsius: "+cTemp+ \
-    "degrees/nTemperature in Fahrenheit: "+fTemp+" degrees\n");
+//    var strWrite="Temperature in Celsius: "+cTemp+ \
+  //  "degrees/nTemperature in Fahrenheit: "+fTemp+" degrees\n");
     write2Para(paraID, "3")
 }
