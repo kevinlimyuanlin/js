@@ -22,6 +22,6 @@ function tellTime(paraID) {
 function describeLiverpool(paraID) {
     var desc = "Liverpool is a great club!";
     var adj = prompt("new adjective to describe LFC","great");
-    desc.replace("great", adj);
-    write2Para(paraID,desc);
+    var desc2=desc.replace("great", adj);
+    write2Para(paraID,desc2);
 }
