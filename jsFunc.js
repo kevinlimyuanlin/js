@@ -15,7 +15,13 @@ function writeTemp(paraID, cTemp) {
 function tellTime(paraID) {
 
     var now = new Date();
-//    var out = "3"
     var out = "<br /> "+now.toDateString()+" "+now.toTimeString()+"<br />";
     write2Para(paraID,out);
+}
+
+function describeLiverpool(paraID) {
+    var desc = "Liverpool is a great club!";
+    var adj = prompt("new adjective to describe LFC","great");
+    desc.replace("great", adj);
+    write2Para(paraID,desc);
 }
