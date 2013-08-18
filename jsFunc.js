@@ -15,6 +15,6 @@ function writeTemp(paraID, cTemp) {
 function telltime(paraID) {
 
     var now = new Date();
-    var out = "<br /> "+now.toDatestring()+" "+now.toTimeString()+"<br />";
+    var out = "<br /> "+now.toDateString()+" "+now.toTimeString()+"<br />";
     write2Para(paraID,out)
 }
