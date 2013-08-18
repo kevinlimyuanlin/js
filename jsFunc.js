@@ -17,5 +17,5 @@ function telltime(paraID) {
     var now = new Date();
     var out = "3"
 //    var out = "<br /> "+now.toDateString()+" "+now.toTimeString()+"<br />";
-    write2Para(paraID,out)
+    write2Para(paraID,out);
 }
