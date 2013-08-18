@@ -2,6 +2,7 @@
 <html>
   <head>
     <title> Hello from Javascript!</title>
+    <script src="jsFunc.js"> </script>
   </head>
   <body>
     <input type="button" onclick="alert('Welcome to Kevin\'s programme!')" value="Start" />
@@ -12,7 +13,7 @@
 
     <script>
       var cTemp = 100;  // temperature in Celsius
-      var fTemp = cTemp*9/5+32;
+      var fTemp = c2F(cTemp)
       document.write("Temperature in Celsius: "+cTemp+" degrees<br />");
       document.write("Temperature in Fahrenheit: "+fTemp+" degrees");
     </script>
