@@ -13,8 +13,8 @@ function writeTemp(paraID, cTemp) {
 }
 
 function telltime(paraID) {
-    var out = "";
+
     var now = new Date();
-    out = "<br /> "+now.toDatestring()+" "+now.toTimeString()+"<br />";
+    var out = "<br /> "+now.toDatestring()+" "+now.toTimeString()+"<br />";
     write2Para(paraID,out)
 }
