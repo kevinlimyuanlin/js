@@ -8,7 +8,13 @@ function write2Para(paraID, text) {
 
 function writeTemp(paraID, cTemp) {
     var fTemp=c2F(cTemp);
-    var strWrite="Temperature in Celsius: "+cTemp.toString()+ "degrees <br />Temperature in Fahrenheit: "+fTemp.toString()+" degrees<br />";
-//    var strWrite=fTemp.toString();
+    var strWrite="Temperature in Celsius: "+cTemp.toString()+ " degrees <br />Temperature in Fahrenheit: "+fTemp.toString()+" degrees<br />";
     write2Para(paraID, strWrite);
+}
+
+function telltime(paraID) {
+    var out = "";
+    var now = new Date();
+    out = "<br /> "+now.toDatestring()+" "+now.toTimeString()+"<br />";
+    write2Para(paraID,out)
 }

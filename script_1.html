@@ -3,8 +3,11 @@
   <head>
     <title> Hello from Javascript!</title>
     <script src="jsFunc.js"> </script>
+    <script> telltime("time") </script>
   </head>
   <body>
+    <p ID="time">
+    </p>
     <input type="text" name="cVal" ID="cVal" size="40" />
     <br />
     <input type="button" onclick="writeTemp('giveTemp',cVal.value)" value="Start" />
