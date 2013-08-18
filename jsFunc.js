@@ -12,7 +12,7 @@ function writeTemp(paraID, cTemp) {
     write2Para(paraID, strWrite);
 }
 
-function telltime(paraID) {
+function tellTime(paraID) {
 
     var now = new Date();
     var out = "3"
