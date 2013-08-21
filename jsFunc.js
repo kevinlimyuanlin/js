@@ -27,11 +27,10 @@ function describeLiverpool(paraID) {
 }
 
 function dispBanner(arrBanner) {
-    var numBanner=arrBanner.length;
     setInterval(cycle, 2000);
 }
 
 function cycle() {
     counter++;
-    document.getElementById("banner").src=arrBanner[counter%numBanner];
+    document.getElementById("banner").src=arrBanner[counter%arrBanner.length];
 }
