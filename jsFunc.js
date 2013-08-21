@@ -33,5 +33,5 @@ function dispBanner(arrBanner) {
 
 function cycle() {
     counter++;
-    document.getElementById("banner").src=banners[counter%numBanner];
+    document.getElementById("banner").src=arrBanner[counter%numBanner];
 }
