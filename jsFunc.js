@@ -26,11 +26,11 @@ function describeLiverpool(paraID) {
     write2Para(paraID,desc2);
 }
 
-function dispBanner(arrBanner) {
-    setInterval(cycle, 2000);
+function dispBanner(arrBanner, bannerID) {
+    setInterval(cycle(bannerID), 2000);
 }
 
-function cycle() {
+function cycle(bannerID) {
     counter++;
-    document.getElementById("banner").src=arrBanner[counter%arrBanner.length];
+    document.getElementById(bannerID).src=arrBanner[counter%arrBanner.length];
 }
