@@ -35,3 +35,16 @@ function dispBanner(arrBanner, bannerID) {
 	document.getElementById(bannerID).src=arrBanner[counter%arrBanner.length];
     }
 }
+
+function Pokemon(pokemonName, pokemonPic, pokemonAbility) {
+    this.name=pokemonName;
+    this.pic=pokemonPic;
+    this.ability=pokemonAbility;
+}
+
+function dispPokemon(pokemon) {
+    var strWrite="<br />"+charmander.name+" can use "+charmander.ability+"</ br>";
+    write2Para("poke1", strWrite)
+    document.getElementById("poke1pic").src=charmander.pic
+
+}
