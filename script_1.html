@@ -20,12 +20,19 @@
     <p ID="LFCdesc"></p>
     <img src="RS125.jpg" onmouseover="this.src='twPic.jpg';" onmouseout="this.src='RS125.jpg';" />
     <br />
+    <img id="banner" alt="banner" src="banner1.jpg" />
 
     <script>
       var cTemp = 100;  // temperature in Celsius
       var fTemp = c2F(cTemp)
       document.write("Temperature in Celsius: "+cTemp+" degrees<br />");
       document.write("Temperature in Fahrenheit: "+fTemp+" degrees");
+    </script>
+
+    <script>
+      var counter=1;
+      var arrBanner = ["banner1.jpg", "banner2.jpg", "banner3.jpg"];
+      dispBanner(arrBanner)
     </script>
   </body>
 </html>

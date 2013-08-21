@@ -25,3 +25,13 @@ function describeLiverpool(paraID) {
     var desc2=desc.replace("great", adj);
     write2Para(paraID,desc2);
 }
+
+function dispBanner(arrBanner) {
+    var numBanner=arrBanner.length;
+    setInterval(cycle, 2000);
+}
+
+function cycle() {
+    counter++;
+    document.getElementById("banner").src=banners[counter%numBanner];
+}
