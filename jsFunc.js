@@ -28,7 +28,7 @@ function describeLiverpool(paraID) {
 
 function dispBanner(arrBanner, bannerID) {
     var counter=1;
-    setInterval(cycle(bannerID), 2000);
+    setInterval(function(){cycle(bannerID)}, 2000);
 
     function cycle(bannerID) {
 	counter++;
