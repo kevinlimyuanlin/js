@@ -3,6 +3,9 @@
   <head>
     <title> Hello from Javascript!</title>
     <script src="jsFunc.js"> </script>
+    <script>
+      window.onload=showEvent;
+    </script>
   </head>
   <body>
     <p ID="time">
@@ -41,5 +44,7 @@
       var arrBanner = ["pokemon.jpg", "pokemon1.jpg", "pokemon2.jpg"];
       dispBanner(arrBanner, "banner")
     </script>
+    <input id ="btnTest" type="button" value="show event properties" />
+    <div id="eventDesc"></div>
   </body>
 </html>

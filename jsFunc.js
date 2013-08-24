@@ -48,3 +48,14 @@ function dispPokemon(pokemon) {
     document.getElementById("poke1pic").src=charmander.pic
 
 }
+
+function showEvent() {
+    var out = "";
+    document.getElementById("btnTest").onclick=function(e) {
+	if (!e) var e = window.event;
+	for (i in e) {
+	    out += i+" = " + e[i] + "</br>";
+	}
+	write2Para("eventDesc", out);
+    }
+}
