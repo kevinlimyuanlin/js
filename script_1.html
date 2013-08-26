@@ -5,9 +5,13 @@
     <script src="jsFunc.js"> </script>
     <script>
       window.onload=showEvent;
+      window.onload=createContentsByTag("h1","menu");
     </script>
   </head>
   <body>
+    <div id="menu">
+    </div>
+    <h1>Welcome to wherever you are</h1>
     <p ID="time">
       time should appear here
     </p>
@@ -19,8 +23,10 @@
     <p ID="giveTemp">
       Temperature data should appear here
     </p>
+    <h1>Don't mess with the REDS</h1>
     <input type="button" onclick="describeLiverpool('LFCdesc')" value="Click here to change Liverpool description" />
     <p ID="LFCdesc"></p>
+    <h1>Bike + Taiwan = Hell riders in Heaven </h1>
     <img src="RS125.jpg" onmouseover="this.src='twPic.jpg';" onmouseout="this.src='RS125.jpg';" />
     <br />
     <img id="banner" alt="banner" src="pokemon.jpg" />
@@ -31,7 +37,7 @@
       document.write("Temperature in Celsius: "+cTemp+" degrees<br />");
       document.write("Temperature in Fahrenheit: "+fTemp+" degrees");
     </script>
-
+    <h1>Who doesn't like charmanders?</h1>
     <p ID="poke1">
       charmander name and ability should appear here
     </p>
@@ -40,11 +46,15 @@
       var charmander= new Pokemon("charmander","charmanderPic.jpg","flamethrower")
       dispPokemon("charmander")
     </script>
+    <h1>Like Pokemon banners?</h1>
     <script>
       var arrBanner = ["pokemon.jpg", "pokemon1.jpg", "pokemon2.jpg"];
       dispBanner(arrBanner, "banner")
     </script>
+    <h1>Event Properties Test (try at your peril)</h1>
     <input id ="btnTest" type="button" value="show event properties" />
     <div id="eventDesc"></div>
+    <h1>Random Ending</h1>
+    <p> All endings are random, because all of life is random. But randomness does not equate a lack of distribution. Hence, we can still make some sense of endings, the way we can make some sense of quantum.</p>
   </body>
 </html>

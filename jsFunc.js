@@ -59,3 +59,20 @@ function showEvent() {
 	write2Para("eventDesc", out);
     }
 }
+
+function createContentsByTag(tag, menuDiv) {
+    //this function takes a tagname as a string (tag) and returns a dynamic menu bar at a specified div (menuDiv) containing all the ID of that tag.
+
+    var tagArr = document.getElementsByTagName(tag);
+    var menuHtml = "<ol>";
+    for (i in tagArr) {
+	menuHtml = menuHtml + "<li>" + addOneMenu(tagArr[i])+"</li>";
+    }
+    menuHtml = menuHtml+"</ol>";
+    write2Para(menuDiv, menuHtml);
+}
+
+function addOneMenu(tagID) {
+    //This function adds the ID of the tag and an html ref to it
+    return "<a href=#"+tagID+">"+tagID+"</a>";
+}
