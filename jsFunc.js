@@ -65,7 +65,7 @@ function createContentsByTag(tag, menuDiv) {
     var tagArr = document.getElementsByTagName(tag);
     var menuHtml = "<ol>";
     for (var i=0; i<tagArr.length;i++) {
-	menuHtml = menuHtml + "<li>" + addOneMenu(tagArr[i].innerHTML)+"</li>";
+	menuHtml = menuHtml + "<li>" + addOneMenu(tagArr[i].id)+"</li>";
     }
     menuHtml = menuHtml+"</ol>";
    write2Para(menuDiv, menuHtml);
