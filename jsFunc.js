@@ -46,7 +46,7 @@ function dispPokemon(pokemon) {
     var strWrite="<br />"+charmander.name+" can use "+charmander.ability+"</ br>";
     write2Para("poke1", strWrite)
     document.getElementById("poke1pic").src=charmander.pic
-
+    
 }
 
 function showEvent() {
@@ -62,11 +62,11 @@ function showEvent() {
 
 function createContentsByTag(tag, menuDiv) {
     //this function takes a tagname as a string (tag) and returns a dynamic menu bar at a specified div (menuDiv) containing all the ID of that tag.
-
+    alert(tag);
     var tagArr = document.getElementsByTagName(tag);
     var menuHtml = "<ol>";
-    for (i in tagArr) {
-	menuHtml = menuHtml + "<li>" + addOneMenu(tagArr[i])+"</li>";
+    for (var i=0; i<tagArr.length;i++) {
+	menuHtml = menuHtml + "<li>" + addOneMenu(tagArr[i].innerHTML)+"</li>";
     }
     menuHtml = menuHtml+"</ol>";
     alert(menuDiv)
