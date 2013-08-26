@@ -62,7 +62,6 @@ function showEvent() {
 
 function createContentsByTag(tag, menuDiv) {
     //this function takes a tagname as a string (tag) and returns a dynamic menu bar at a specified div (menuDiv) containing all the ID of that tag.
-    alert(tag);
     var tagArr = document.getElementsByTagName(tag);
     var menuHtml = "<ol>";
     for (var i=0; i<tagArr.length;i++) {
