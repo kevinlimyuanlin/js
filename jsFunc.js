@@ -69,7 +69,8 @@ function createContentsByTag(tag, menuDiv) {
 	menuHtml = menuHtml + "<li>" + addOneMenu(tagArr[i])+"</li>";
     }
     menuHtml = menuHtml+"</ol>";
-    write2Para(menuDiv, menuHtml);
+    alert(menuDiv)
+   write2Para(menuDiv, menuHtml);
 }
 
 function addOneMenu(tagID) {
